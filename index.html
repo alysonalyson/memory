@@ -2,85 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Matching Game</title>
-    <meta name="description" content="">
-    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+          crossorigin="anonymous">
 </head>
 <body>
-
-    <div class="container">
-        <header>
-            <h1>Matching Game</h1>
-        </header>
-
-        <section class="score-panel">
-        	<ul class="stars">
-        		<li><i class="fa fa-star"></i></li>
-        		<li><i class="fa fa-star"></i></li>
-        		<li><i class="fa fa-star"></i></li>
-        	</ul>
-
-        	<span class="moves">3</span> Moves
-
-            <div class="restart">
-        		<i class="fa fa-repeat"></i>
-        	</div>
-        </section>
-
-        <ul class="deck">
-            <li class="card">
-                <i class="fa fa-diamond"></i>
-            </li>
-            <li class="card">
-                <i class="fa fa-paper-plane-o"></i>
-            </li>
-            <li class="card match">
-                <i class="fa fa-anchor"></i>
-            </li>
-            <li class="card">
-                <i class="fa fa-bolt"></i>
-            </li>
-            <li class="card">
-                <i class="fa fa-cube"></i>
-            </li>
-            <li class="card match">
-                <i class="fa fa-anchor"></i>
-            </li>
-            <li class="card">
-                <i class="fa fa-leaf"></i>
-            </li>
-            <li class="card">
-                <i class="fa fa-bicycle"></i>
-            </li>
-            <li class="card">
-                <i class="fa fa-diamond"></i>
-            </li>
-            <li class="card">
-                <i class="fa fa-bomb"></i>
-            </li>
-            <li class="card">
-                <i class="fa fa-leaf"></i>
-            </li>
-            <li class="card">
-                <i class="fa fa-bomb"></i>
-            </li>
-            <li class="card open show">
-                <i class="fa fa-bolt"></i>
-            </li>
-            <li class="card">
-                <i class="fa fa-bicycle"></i>
-            </li>
-            <li class="card">
-                <i class="fa fa-paper-plane-o"></i>
-            </li>
-            <li class="card">
-                <i class="fa fa-cube"></i>
-            </li>
-        </ul>
+  <div class='header'>
+    <h1>Memory Game</h1>
+    <p>Moves:
+      <span id= 'move-counter'></span>
+      <i class="fas fa-redo" id='refresh'></i>
+    </p>
+  </div>
+  <div class = 'board'>
+    <div class= 'tile front'>
+      <i class="fas fa-fish hidden orange"></i>
     </div>
-
-    <script src="js/main.js"></script>
+    <div class= 'tile front'>
+      <i class="fas fa-bicycle hidden grey"></i>
+    </div>
+    <div class= 'tile front'>
+      <i class="fas fa-swimmer hidden blue"></i>
+    </div>
+    <div class= 'tile front'>
+      <i class="fas fa-rocket hidden red"></i>
+    </div>
+    <div class= 'tile front'>
+      <i class="fas fa-cocktail hidden purple"></i>
+    </div>
+    <div class= 'tile front'>
+      <i class="fas fa-frog hidden green"></i>
+    </div>
+    <div class= 'tile front'>
+      <i class="fas fa-fish hidden orange"></i>
+    </div>
+    <div class= 'tile front'>
+      <i class="fas fa-tree hidden dark-green"></i>
+    </div>
+    <div class= 'tile front'>
+      <i class="fas fa-futbol hidden"></i>
+    </div>
+    <div class= 'tile front'>
+      <i class="fas fa-swimmer hidden blue"></i>
+    </div>
+    <div class= 'tile front'>
+      <i class="fas fa-cocktail hidden purple"></i>
+    </div>
+    <div class= 'tile front'>
+      <i class="fas fa-rocket hidden red"></i>
+    </div>
+    <div class= 'tile front'>
+      <i class="fas fa-frog hidden green"></i>
+    </div>
+    <div class= 'tile front'>
+      <i class="fas fa-bicycle hidden grey"></i>
+    </div>
+    <div class= 'tile front'>
+      <i class="fas fa-tree hidden dark-green"></i>
+    </div>
+    <div class= 'tile front'>
+      <i class="fas fa-futbol hidden"></i>
+    </div>
+  </div>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>
