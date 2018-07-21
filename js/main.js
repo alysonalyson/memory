@@ -22,9 +22,11 @@ $(document).ready(() => {
     moveCounter++;
     $('.move-counter').html(moveCounter);
 
-    let target1 = $('.active')[0];
-    let target2 = $('.active')[1];
+    let pair = $('.active');
+    let target1 = pair[0];
+    let target2 = pair[1];
     if (target1.isEqualNode(target2)){
+      console.log('it\'s a match!');
       $('.active').effect('highlight');
       $('.active').addClass('matched').removeClass('active');
     } else {
@@ -35,7 +37,7 @@ $(document).ready(() => {
           $('.active').children('i').hide();
           $('.active').removeClass('active').addClass('front');
           $('.tile').removeClass('no-click');
-        }, 800);
+        }, 600);
       };
     }
     let pairs = $('.matched');
