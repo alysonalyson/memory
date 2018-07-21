@@ -37,7 +37,7 @@ $(document).ready(() => {
           $('.active').children('i').hide();
           $('.active').removeClass('active').addClass('front');
           $('.tile').removeClass('no-click');
-        }, 600);
+        }, 400);
       };
     }
     let pairs = $('.matched');
