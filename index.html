@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Matching Game</title>
+    <title>Memory Game</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
@@ -14,7 +14,7 @@
   <div class='header'>
     <h1>Memory Game</h1>
     <p>Moves:
-      <span id= 'move-counter'></span>
+      <span class= 'move-counter'></span>
       <i class="fas fa-redo" id='refresh'></i>
     </p>
   </div>
@@ -67,12 +67,26 @@
     <div class= 'tile front'>
       <i class="fas fa-futbol hidden"></i>
     </div>
+
+    <div id='win-pop-up'>
+      <h1>YOU WIN!</h1>
+      <p>You cleared the board in
+        <span class= 'move-counter'></span> moves!
+      </p>
+      <p>
+        <a id= 'reset'> Play Again? </a>
+      </p>
+    <div>
   </div>
   <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous">
   </script>
+  <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -13,9 +13,10 @@ body {
   margin: auto;
 }
 
-.header h1 {
+ .header h1 {
     font-size:2.7rem;
     font-weight: 200;
+    margin-bottom: -10px;
   }
 
 .header p {
@@ -27,6 +28,10 @@ body {
   font-size:1.5rem;
   margin-left: 100px;
   padding: 0 10px;
+}
+
+#refresh:hover {
+  color: #81D4FA;
 }
 
 .board {
@@ -43,7 +48,11 @@ body {
 linear-gradient(135deg, #ABB2B9 22px, #ABB2B9 22px, #ABB2B9 24px, transparent 24px, transparent 67px, #ABB2B9 67px, #ABB2B9 69px, transparent 69px),
 linear-gradient(225deg, #ABB2B9 22px, #ABB2B9  22px, #ABB2B9 24px, transparent 24px, transparent 67px, #ABB2B9 67px, #ABB2B9 69px, transparent 69px)0 64px;
 background-color:#708090;
-background-size: 64px 128px
+background-size: 64px 128px;
+}
+
+.board i {
+  display: none;
 }
 
 .tile {
@@ -59,6 +68,11 @@ background-size: 64px 128px
   background-color: #48C9B0;
 }
 
+.matched {
+  background-color: #1F618D;
+  pointer-events: none;
+}
+
 .active {
   background-color: #1F618D;
 }
@@ -67,6 +81,39 @@ i {
   color: white;
   font-size: 3.5rem;
   margin: auto;
+}
+
+.no-click {
+  pointer-events: none;
+}
+
+#win-pop-up {
+  padding-top: 20px;
+  text-align: center;
+  font-family: 'Comfortaa';
+  color: white;
+  font-weight: 200;
+  height: 250px;
+  width: 350px;
+  border: 15px double #ABB2B9;
+  border-radius: 120px;
+  margin: auto;
+  z-index: 5;
+  background-color: #1F618D;
+  position: relative;
+  top: -350px;
+  display: none;
+}
+
+#reset {
+  color: white;
+  text-decoration: none;
+  font-size: 1.8rem;
+  margin-top: 50px;
+}
+
+#reset:hover {
+  color: #81D4FA;
 }
 
 .green {
@@ -99,8 +146,4 @@ i {
 
 .orange {
   color: #FFB74D;
-}
-
-.hidden {
-  display: none;
 }
