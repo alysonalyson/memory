@@ -23,7 +23,13 @@ body {
     font-size: 1.2rem;
   }
 
-.header i {
+#stars i {
+  color: white;
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+#refresh {
   color: white;
   font-size:1.5rem;
   margin-left: 100px;
