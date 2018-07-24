@@ -15,12 +15,13 @@
     <h1>Memory Game</h1>
     <p>Moves:
       <span class= 'move-counter'></span>
-      <span id= 'stars'>
+      <span class= 'stars'>
         <i class='fas fa-star s1'></i>
         <i class='fas fa-star s2'></i>
         <i class='fas fa-star s3'></i>
         <i class='fas fa-star s4'></i>
       </span>
+      <span class= 'timer'></span>
       <i class="fas fa-redo" id='refresh'></i>
     </p>
   </div>
@@ -77,7 +78,13 @@
     <div id='win-pop-up'>
       <h1>YOU WIN!</h1>
       <p>You cleared the board in
-        <span class= 'move-counter'></span> moves!
+        <span class= 'timer'></span>, using
+        <span class= 'move-counter'></span> moves to earn a <br>
+          <i class='fas fa-star s1'></i>
+          <i class='fas fa-star s2'></i>
+          <i class='fas fa-star s3'></i>
+          <i class='fas fa-star s4'></i>
+          rating.
       </p>
       <p>
         <a id= 'reset'> Play Again? </a>

@@ -1,6 +1,21 @@
 $(document).ready(() => {
   let moveCounter = 0;
-  let timer = 0;
+
+  //timer function
+  let countUp = new Date(); localStorage.setItem('startDate', countUp);
+  let timer = setInterval(function() {
+    //Start timer at page load
+    let start = new Date().getTime();
+    // Calculate difference between now and start
+    let diff = start - countUp.getTime();
+    let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((diff % (1000 * 60)) / 1000);
+  //Add leading zero for single digit seconds
+  if (seconds <10) {
+    seconds = '0'+ seconds;
+  }
+    $('.timer').html(minutes + ':' + seconds);
+}, 1000);
 
   let tiles = $('.tile');
   for(let i = 0; i < tiles.length; i++) {
@@ -23,12 +38,12 @@ $(document).ready(() => {
     moveCounter++;
     $('.move-counter').html(moveCounter);
 
-    if (moveCounter === 24) {
+    if (moveCounter === 30) {
       $('.s4').hide();
-    } else if (moveCounter === 34) {
+    } else if (moveCounter === 40) {
       $('.s4').hide();
       $('.s3').hide();
-    } else if (moveCounter === 44) {
+    } else if (moveCounter === 50) {
       $('.s4').hide();
       $('.s3').hide();
       $('.s2').hide();
@@ -60,6 +75,7 @@ $(document).ready(() => {
 
     let pairs = $('.matched');
     if(pairs.length == 16) {
+      clearInterval(timer);
       $('#win-pop-up').slideDown();
     }
 
