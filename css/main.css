@@ -3,7 +3,7 @@ div {
 }
 
 body {
-  background: linear-gradient(160deg, #BB8FCE 0%, #16A085 100%);
+  background: linear-gradient(160deg, #BB8FCE 10%, #16A085 50%, #BB8FCE 100%);
 }
 
 .header {
@@ -11,6 +11,7 @@ body {
   font-family: 'Nixie One';
   text-align: center;
   margin: auto;
+  max-width: 100%;
 }
 
  .header h1 {
@@ -49,6 +50,7 @@ body {
   border: 4px solid #ABB2B9;
   border-radius: 10%;
   padding: 10px;
+  max-width: 100%;
   /* Background pattern by Jeroen Franse, from http://lea.verou.me/css3patterns/#weave */
   background:
 linear-gradient(135deg, #ABB2B9 22px, #ABB2B9 22px, #ABB2B9 24px, transparent 24px, transparent 67px, #ABB2B9 67px, #ABB2B9 69px, transparent 69px),

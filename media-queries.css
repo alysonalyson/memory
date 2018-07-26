@@ -1,0 +1,59 @@
+@media screen and (max-width: 400px) {
+  .board {
+    height: 300px;
+    width: 300px;
+    margin-top: 50px;
+  }
+
+  .header h1 {
+    margin-top: 50px;
+    font-size: 2rem;
+  }
+
+  .stars {
+    font-size: .3rem;
+    margin: 0;
+  }
+
+  #refresh {
+    margin-left: 0;
+  }
+
+  .tile i {
+    font-size: 2rem;
+  }
+
+  #win-pop-up {
+    top: -260px;
+  }
+
+  #win-pop-up h1 {
+    font-size: 1.5rem;
+  }
+
+  #win-pop-up p {
+    font-size: 1.1rem;
+  }
+
+  #win-pop-up i {
+    font-size: 1.1rem;
+  }
+
+  #reset {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+  .board {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .board {
+    height: 500px;
+    width: 500px;
+  }
+}
