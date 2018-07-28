@@ -34,6 +34,7 @@ $(document).ready(() => {
 
 //flip tiles
   $('.tile').on('click', event => {
+    $(event.currentTarget).addClass('no-click');
     $(event.currentTarget).children('i').show();
     $(event.currentTarget).addClass('active');
     //count moves
@@ -56,15 +57,9 @@ $(document).ready(() => {
     let target2 = pair[1];
 
     if (target1.isEqualNode(target2)){
-      console.log(target1);
-      console.log(target2);
-      console.log('it\'s a match!');
       $('.active').effect('highlight');
       $('.active').addClass('matched').removeClass('active');
     } else if (moveCounter > 0 && moveCounter %2 === 0) {
-        console.log(target1);
-        console.log(target2);
-        $('.tile').addClass('no-click');
         $('.active').effect('bounce', {times:2});
         window.setTimeout(function () {
           $('.tile').removeClass('no-click');
