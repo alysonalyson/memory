@@ -8,5 +8,6 @@ This project was made using:
 *jQuery UI (https://jqueryui.com/)*
 *Font Awesome icons (https://fontawesome.com/)*
 
-#Attributions
-The board background is a variation on the Weave pattern designed by Jeroen Franse, from http://lea.verou.me/css3patterns/#weave
+#Attributions:
+*The board background is a variation on the Weave pattern designed by Jeroen Franse, from http://lea.verou.me/css3patterns/#weave
+*The timer function I used is adapted from Stack Overflow user Brahma Dev's timer, found at https://jsfiddle.net/5a6ranep/1/
